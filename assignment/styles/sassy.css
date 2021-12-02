@@ -1,0 +1,75 @@
+:root {
+  --darkgrey25: rgba(30, 30, 30, 0.25);
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  /* Background from https://uigradients.com/#IbizaSunset */
+  background: #ee0979;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  color: white;
+}
+
+h1, h2, h3 {
+  background-color: var(--darkgrey25);
+  margin: 0;
+}
+
+h2, h3 {
+  font-weight: 400;
+}
+
+header {
+  margin: 1rem auto;
+  padding: 0;
+  background-color: var(--darkgrey25);
+  color: whitesmoke;
+  width: 75vw;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 5px;
+  border-color: transparent;
+}
+header h1 {
+  font-weight: 700;
+  border-radius: 3px 3px 0 0;
+}
+
+.info {
+  margin: 1rem auto;
+  background-color: var(--darkgrey25);
+  color: whitesmoke;
+  width: 75vw;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 5px;
+  border-color: transparent;
+}
+.info h2 {
+  border-radius: 3px 3px 0 0;
+  margin-bottom: 1rem;
+}
+.info h3 {
+  /* Not 100% sure that sass made this more readable, 
+  but I'm gonna stick with the refactor */
+  border-radius: 0 0 3px 3px;
+  margin-top: 1rem;
+}
+
+/* Trying some responsive stuff */
+@media screen and (max-width: 720px) {
+  header {
+    width: auto;
+  }
+
+  .info {
+    width: auto;
+  }
+}
+
+/*# sourceMappingURL=sassy.css.map */
