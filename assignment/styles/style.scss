@@ -1,7 +1,6 @@
 
 :root {
     --darkgrey25: rgba(30, 30, 30, 0.25);
-    --darkgrey50: rgba(30, 30, 30, 0.5);
 }
 
 body {
@@ -14,36 +13,13 @@ body {
     color: white;
 }
 
-h1 {
-    font-weight: 700;
+h1, h2, h3 {
     background-color: var(--darkgrey25);
     margin: 0;
-    /* Just kinda eyeballing the radius on this */
-    border-radius: 3px 3px 0 0;
 }
 
 h2, h3 {
     font-weight: 400;
-    background-color: var(--darkgrey25);
-    margin: 0;
-}
-
-h2 {
-    border-radius: 3px 3px 0 0;
-    margin-bottom: 1rem;
-}
-
-h3 {
-    /* Understanding the appeal of sass now */ 
-    border-radius: 0 0 3px 3px;
-    margin-top: 1rem;
-}
-
-img {
-    max-width: 75vw;
-    min-width: 65vw;
-    display: block;
-    margin: 0 auto;
 }
 
 header {
@@ -56,6 +32,11 @@ header {
     border-width: 5px;
     border-radius: 5px;
     border-color: transparent;
+
+    h1 {
+        font-weight: 700;
+        border-radius: 3px 3px 0 0;
+    }
 }
 
 .info {
@@ -67,15 +48,22 @@ header {
     border-width: 5px;
     border-radius: 5px;
     border-color: transparent;
+
+    h2 {
+        border-radius: 3px 3px 0 0;
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        /* Not 100% sure that sass made this more readable, 
+        but I'm gonna stick with the refactor */ 
+        border-radius: 0 0 3px 3px;
+        margin-top: 1rem;
+    }
 }
 
 /* Trying some responsive stuff */
 @media screen and (max-width: 720px) {
-    image {
-        width: 100%;
-        max-width: auto;
-        min-width: auto;
-    }
     header {
         width: auto;
     }
