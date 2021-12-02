@@ -20,6 +20,10 @@ h1 {
     margin: 0;
     /* Just kinda eyeballing the radius on this */
     border-radius: 3px 3px 0 0;
+    /* Gonna try gradient-izing the h1 as well */
+    background: -webkit-linear-gradient(#FFFFFF, #00b0ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h2, h3 {
